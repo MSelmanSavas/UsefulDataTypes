@@ -14,8 +14,8 @@ namespace UsefulDataTypes
 
 #if ODIN_INSPECTOR && UNITY_EDITOR
         [Sirenix.OdinInspector.TableMatrix(DrawElementMethod = "DrawCustomMatrix", ResizableColumns = false)]
-#endif
         [Sirenix.OdinInspector.ShowInInspector]
+#endif
         public T[,] Values;
 
         [SerializeField]
@@ -26,7 +26,9 @@ namespace UsefulDataTypes
         [HideInInspector]
         protected Vector2Int _assignedValuesSize = Vector2Int.zero;
 
-        [Sirenix.OdinInspector.ShowInInspector]
+#if ODIN_INSPECTOR && UNITY_EDITOR
+      [Sirenix.OdinInspector.ShowInInspector]
+#endif
         public Vector2Int MatrixSize
         {
             get

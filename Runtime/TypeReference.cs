@@ -4,7 +4,9 @@ using UnityEngine;
 [System.Serializable]
 public class TypeReference : ISerializationCallbackReceiver, IEquatable<TypeReference>, IEquatable<System.Type>
 {
+#if ODIN_INSPECTOR
     [Sirenix.OdinInspector.ShowInInspector]
+#endif
     public System.Type Type;
 
     [SerializeField, HideInInspector]

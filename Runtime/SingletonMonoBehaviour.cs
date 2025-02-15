@@ -58,12 +58,16 @@ namespace UsefulDataTypes
             }
         }
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.ShowInInspector]
         [Sirenix.OdinInspector.ReadOnly]
+#endif
         protected static T _instance;
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.ShowInInspector]
         [Sirenix.OdinInspector.ReadOnly]
+#endif
         protected static T _editorInstance;
 
         protected virtual bool dontDestroyOnLoad => false;

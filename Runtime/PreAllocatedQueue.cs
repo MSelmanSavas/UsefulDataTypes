@@ -14,8 +14,11 @@ namespace UsefulDataTypes
 
         public Action<int, int> OnCapacityChange;
 
+#if ODIN_INSPECTOR
         [Sirenix.OdinInspector.ShowInInspector]
         [Sirenix.OdinInspector.ReadOnly]
+#endif
+
         public int Capacity
         {
             get => ValueArray.Length;
