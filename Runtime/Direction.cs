@@ -13,6 +13,22 @@ public static class DirectionUtils
     public static Vector2Int DownLeft => Vector2Int.down + Vector2Int.left;
     public static Vector2Int DownRight => Vector2Int.down + Vector2Int.right;
 
+    public static readonly List<Direction> CardinalDirections = new List<Direction>
+    {
+        Direction.Up,
+        Direction.Right,
+        Direction.Down,
+        Direction.Left,
+    };
+
+    public static readonly List<Direction> OrdinalDirections = new List<Direction>
+    {
+        Direction.UpRight,
+        Direction.DownRight,
+        Direction.DownRight,
+        Direction.UpLeft,
+    };
+
     public static readonly List<Direction> AllDirections = new List<Direction>
     {
         Direction.Up,
@@ -23,6 +39,22 @@ public static class DirectionUtils
         Direction.UpRight,
         Direction.DownLeft,
         Direction.DownRight
+    };
+
+    public static readonly List<Vector2Int> CardinalVector2Ints = new List<Vector2Int>
+    {
+        Up,
+        Right,
+        Down,
+        Left,
+    };
+
+    public static readonly List<Vector2Int> OrdinalVector2Ints = new List<Vector2Int>
+    {
+        UpRight,
+        DownRight,
+        DownRight,
+        UpLeft,
     };
 
     public static readonly List<Vector2Int> AllDirectionVector2Ints = new List<Vector2Int>
