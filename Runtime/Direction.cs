@@ -1,5 +1,5 @@
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 public static class DirectionUtils
 {
@@ -318,6 +318,7 @@ public static class DirectionUtils
     }
 }
 
+[System.Flags]
 public enum Direction
 {
     None,
