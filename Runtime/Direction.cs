@@ -318,7 +318,6 @@ public static class DirectionUtils
     }
 }
 
-[System.Flags]
 public enum Direction
 {
     None,
