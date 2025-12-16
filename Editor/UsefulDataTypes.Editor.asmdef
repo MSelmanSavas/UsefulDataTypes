@@ -2,7 +2,8 @@
     "name": "UsefulDataTypes.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:b85be91df02590f4eb95f04f56407a44"
+        "GUID:b85be91df02590f4eb95f04f56407a44",
+        "GUID:b3bb5d9aa4e7a38499654615c5c2dd52"
     ],
     "includePlatforms": [
         "Editor"
